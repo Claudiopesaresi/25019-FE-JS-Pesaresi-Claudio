@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudio Pesaresi</title>
+
+    <!-- Tipo de letra -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Playwrite+DK+Loopet:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap" rel="stylesheet">
+
+
+    <!-- Icono de carrito de compras -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <i class="fas fa-shopping-cart"></i> 
+        
+    <link rel="stylesheet" type="text/css"   href="./CSS/layout.css">
+</head>
+<!-- Parte principal y visible de la pagina -->
+
+<body>
+
+    <header class="header">
+        <!-- Acá estamos dentro del header-->
+         <img src="./MEDIA/IMG/DATOMA_LOGO.png" height="60%vw"> <br>
+        <!--
+         <img src="https://cdn-icons-png.flaticon.com/512/1170/1170627.png" alt="Ícono de libro" width="50"><br>
+<br>
+        -->
+
+         <nav class="nav">
+        <!-- Acá estamos dentro del nav-->
+            <h2>Menu de navegación</h2>
+            <ul class="flex-links">
+                <li>
+                  <a href="#productos" >Servicios</a>                    
+                </li>
+                <li>
+                  <a href="#form-id" >Contacto</a>                    
+                </li>
+                <li >
+                  <a href="#resena" >Reseña</a>                    
+                </li>
+                <li >
+                  <a href="#ubicacion" >Ubicación</a>                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main" > 
+        
+    <!--  <h1>Esto es el main</h1>  -->
+        
+        <section class="productos" id="productos" >
+            <h2 class="prod-titulo">Nuestros servicios</h2>     
+            <div class="flex-cntainer">
+
+                <div class="item">
+                    <img src="./MEDIA/IMG/Administracion almacenamiento.png" width="100" height="100">
+                    <p class="precio">U$S 2000 / DB</p>
+                    <p class="oferta">Mas de 8 DB - 15% Dto.</p>
+                    <p class="descripcion">Administración de almacenamiento</p>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="item">
+                    <img src="./MEDIA/IMG/Migracion de bases de datos.png" width="100" height="100">
+                    <p class="precio">U$S 1500 / Tb</p>
+                    <p class="oferta">Mayores a 5 Tb, 15% Dto.</p>
+                    <p class="descripcion">Migracion de bases de datos</p>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="item">
+                    <img src="./MEDIA/IMG/supervision permanente.png" width="100" height="100">
+                    <p class="precio">U$S 500 / Tb-DB</p>
+                    <p class="oferta">Mas de 3 DB, mismo precio</p>
+                    <p class="descripcion">Supervision de la operación</p>
+                    <button class="button">Comprar</button>
+                </div>
+
+                <div class="item">
+                    <img  src="./MEDIA/IMG/Securizacion.png"  width="100" height="100" >
+                    <p class="precio">Consultar</p>
+                    <p class="oferta">Consultar</p>
+                    <p class="descripcion">Securización</p>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="item">
+                    <img src="./MEDIA/IMG/Soporte 24 hs.png" width="100" height="100">
+                    <p class="precio">U$S 50/Hs.</p>
+                    <p class="oferta">U$S 30/Hs. Despues de 20 hs.</p>
+                    <p class="descripcion">Soporte 7x24</p>
+                    <button class="button">Comprar</button>
+
+                </div>
+            </div>       
+
+        </section>  
+
+        <section class="contacto" id="form-id" >
+            <h2>Envienos sus datos de contacto</h2>
+            <!--
+            <form>
+                <label>Nombre</label> <br>
+                <input type="text" name="nombre" id="nombre" > <br>
+                <br>
+                <label>Correo electronico</label> <br>
+                <input type="email" name="email" id="email" > <br>
+                <br>
+                <label>Comentarios</label> <br>
+                <textarea rows="5" name="mensaje" id="mensaje" ></textarea> <br>
+                <br><br>
+                <input type="button" value="Enviar">
+            </form>
+            -->
+            <form action="https://formspree.io/f/xldjvegd" method="POST">
+                <label for="nombre">Nombre:</label> <br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required> <br>
+            
+                <label for="email">Correo electrónico:</label> <br>
+                <input type="email" id="email" name="email" placeholder="Correo electronico..." required> <br>
+            
+                <label for="mensaje">Mensaje:</label> <br>
+                <textarea id="mensaje" name="mensaje" rows="5" width="80%" placeholder="Comentarios..." required></textarea> <br>
+            
+                <button type="submit">Enviar</button>
+            </form>
+        </section>  
+
+        <section>
+            <div id="resena" class="resena" >
+                <p class="resena-titulo">
+                    Reseña
+                </p>
+                <p class="resena-texto-inicial" >
+                    Por favor no considerar la paleta de colores de esta pagina, ni los fondos utilizados.
+                </p>
+                <p class="resena-texto">
+                    El objetivo es utilizar lo aprendido en clase, sin considerar tanto al lado estético y teniendo mas énfasis en la funcionalidad de  los objetos.
+                </p>
+
+                <p class="resena-texto">
+                    Más allá de estos comentarios el objetivo será crear la página de una empresa dedicada a servicios de administración de bases de datos para empresas privadas, liberando a los clientes de la responsabilidad del seguimiento de sus datos, de la posibilidad de sufrir siniestros y en caso de ser necesario la disponibilidad del soporte y asesoramiento que hagan que cualquier tarea sea trivial para la empresa
+                </p>
+                
+                <p class="resena-titulo">
+                    Misión
+                </p>
+
+                <p class="resena-texto">
+                    Nuestra empresa debe ser líder en el rubro administración de bases de datos
+                <br>
+                    Esperamos ser la referencia obligada para todo el sector
+                <br>
+                    Trataremos todos los tipos de bases de datos del mercado
+                </p>
+
+                <p class="resena-titulo">
+                    Función
+                </p>
+
+                <p class="resena-texto">
+                Claridad en las comunicaciones
+                <br>
+                Prevision y proactividad en las tareas
+                <br>
+                Exelencia en los resultados
+                </p>
+
+
+                <br>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-item">
+                <!-- Seccion de referencias personales-->
+                <br> <div class="Titulo-Fondo">Referencias personales</div>
+
+                <h2 class="refer-text" >claudio.pesaresi@gmail.com</h2>
+
+                <h2 class="refer-text" >54-9-11-3124-4440</h2>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-item">
+                <!-- Seccion de pista de sonido -->
+
+                <br> <div class="Titulo-Fondo" >Reproductor de sonido</div><br>
+            
+                <audio class="audio" controls>
+                    <source src="./MEDIA/AUDIO/(The Beatles) [01] Blackbird.mp3" type="audio/mp3">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+            
+            </div>
+
+            <hr>
+
+            <div class="footer-item">
+                <!-- Seccion de Pelicula en video -->
+
+                <br> <div class="Titulo-Fondo" >Rep. Video: Aprendiendo SQL</div><br>
+
+                <video class="video" controls poster="preview.jpg" width="80%" height="400" >
+                <source src="./MEDIA/VIDEO/Aprediendo_SQL.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+                </video>
+
+                <br>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-item">
+            
+                <!-- Seccion de mapa -->
+                <br><div class="Titulo-Fondo" id="ubicacion" >Ubicación</div><br>
+
+                <iframe title="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.7592116899013!2d-58.38153644211292!3d-34.60396023619692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e1!3m2!1ses!2sar!4v1748292603830!5m2!1ses!2sar" width="100%" height="400px" style="border:2;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <br>
+
+            </div>
+
+            <hr>
+
+            <div class="footer-item">
+                <!-- Seccion de pagina web embebida -->
+
+                <br> <div class="Titulo-Fondo" >Página web embebida</div><br>
+
+                <iframe src="https://www.lanacion.com.ar/" opacity="90" width="100%" height="600" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+    
+    </footer>
+
+</body>
+
+</html>
